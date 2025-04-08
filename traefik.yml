@@ -1,0 +1,15 @@
+entryPoints:
+  web:
+    address: ":80"
+
+api:
+  dashboard: true
+  insecure: false
+
+providers:
+  docker:
+    exposedByDefault: false
+    network: "traefik_network"
+
+log:
+  level: DEBUG
